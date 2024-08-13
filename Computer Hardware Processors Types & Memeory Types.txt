@@ -1,0 +1,66 @@
+>>> Processors Types : 
+
+1)Central Processing Unit (CPU):
+
+	The main processor of a computer, responsible for executing instructions of programs.
+	Examples: Intel Core, AMD Ryzen .
+
+2)Graphics Processing Unit (GPU):
+
+	Specialized processor designed to accelerate graphics rendering.
+	Examples: NVIDIA GeForce .
+
+3)Digital Signal Processor (DSP):
+
+	Specialized for processing digital signals in real-time.
+	Examples: Qualcomm Hexagon.
+
+4)Field-Programmable Gate Array (FPGA):
+
+	Integrated circuit designed to be configured by the customer after manufacturing.
+
+&& ASIC Processor, Multiprocessors
+
+>>> Memory Types : 
+
+1)Random Access Memory (RAM):
+
+	Volatile memory used for temporary storage while a computer is running.
+	Examples: DDRs
+
+2)Read-Only Memory (ROM):
+
+	Non-volatile memory used to store firmware or software that is rarely changed.
+	Examples: BIOS, EEPROM.
+
+3)Cache Memory:
+
+	High-speed memory located close to the CPU to speed up access to frequently used data.
+	Examples: Cache.
+
+4)Flash Memory:
+
+	Non-volatile memory used for storage and transfer of data.
+	Examples: SSDs, USB flash drives.
+
+>>> Vendors that Make Processors
+
+1)Intel:
+
+	One of the world's largest and highest-valued semiconductor chip makers.
+	Examples: Intel Core series, Intel Xeon series.
+
+2)AMD (Advanced Micro Devices):
+	
+	Known for producing both CPUs and GPUs.
+	Examples: AMD Ryzen series, AMD EPYC series.
+
+3)NVIDIA:
+
+	Leading manufacturer of GPUs and AI-focused processors.
+	Examples: NVIDIA GeForce series, NVIDIA Tesla series.
+
+4)Qualcomm:
+
+	Description: Major producer of SoCs for mobile devices.
+	Examples: Qualcomm Snapdragon series.
