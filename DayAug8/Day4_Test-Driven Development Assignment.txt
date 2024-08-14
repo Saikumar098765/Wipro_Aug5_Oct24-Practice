@@ -1,0 +1,46 @@
+Test-Driven Development (TDD) Process
+
+Definition: Test-Driven Development (TDD) is a software development approach where tests are written before the code. It involves writing tests to define desired functionality, then coding to pass those tests.
+Icon/Visual: A cycle with "Test" leading to "Code" and then "Refactor."
+
+TDD Process
+1. Write a Test:
+* Description: Start by writing a test that defines a new feature or functionality.
+* Visual: A checklist or a test case with a red "X" indicating it will fail.
+2. Run the Test:
+* Description: Execute the test to ensure it fails, confirming that the functionality is not yet implemented.
+* Visual: A test execution screen with a red cross.
+3. Write Code:
+* Description: Write just enough code to make the test pass.
+* Visual: A developer writing code with a green check mark.
+4. Run All Tests:
+* Description: Run all tests to ensure the new code doesn't break existing functionality.
+* Visual: A series of green checks indicating all tests passed.
+5. Refactor Code:
+* Description: Clean up the code to improve its structure without changing its behavior.
+* Visual: A wrench or gear symbol representing code improvement.
+6. Repeat:
+* Description: Continue the cycle for each new feature or improvement.
+* Visual: A looping arrow or cycle symbol.
+
+
+
+Benefits of TDD
+1. Bug Reduction:
+* Description: Early detection of bugs due to frequent testing.
+* Visual: A bug with a red "X" or a bug trap.
+2. Improved Reliability:
+* Description: Ensures each part of the code works correctly, leading to more reliable software.
+* Visual: A shield or lock symbol indicating security and reliability.
+3. Better Design:
+* Description: Encourages writing modular and maintainable code.
+* Visual: A clean, organized code structure or blueprint.
+4. Documentation:
+* Description: Tests serve as a form of documentation for the codebase.
+* Visual: A document or a book with a checkmark.
+
+TDD in Action
+Visual Flowchart:
+* Description: Circular flowchart demonstrating the TDD cycle 
+
+

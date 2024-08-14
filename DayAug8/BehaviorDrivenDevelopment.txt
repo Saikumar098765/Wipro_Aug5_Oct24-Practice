@@ -1,0 +1,15 @@
+Behavior-Driven Development (BDD) 
+Approach:
+* Focus: Specifying behavior through examples.
+* Format: Uses natural language descriptions of functionality.
+o Given: Initial context.
+o When: An action or event.
+o Then: Expected outcome.
+Benefits:
+* Improved Communication: Bridges gap between technical and non-technical stakeholders.
+* Enhanced Collaboration: Ensures everyone understands the requirements.
+* Executable Specifications: Tests are written in plain language and are executable.
+Suitability:
+* Best For: Projects needing clear requirements and collaborative environments.
+* Context: Ideal for projects with strong stakeholder involvement and evolving requirements
+

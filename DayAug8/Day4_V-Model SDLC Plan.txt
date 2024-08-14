@@ -1,0 +1,81 @@
+SDLC plan in the V-model format:
+V-Model SDLC Plan
+Requirements Gathering
+Activities:
+Conduct stakeholder interviews to gather requirements
+Create a product backlog with user stories and acceptance criteria
+Define the project scope, goals, and deliverables
+Deliverables:
+Product backlog with user stories and acceptance criteria
+Project scope document
+Analysis
+Activities:
+Create a detailed analysis of the requirements
+Identify the technical feasibility of the project
+Define the system architecture and components
+Create a data model and database design
+Deliverables:
+System architecture document
+Data model and database design document
+Design
+Activities:
+Create a detailed design of the user interface (UI) and user experience (UX)
+Design the layout and navigation of the app
+Create wireframes and prototypes of the app
+Define the technical design of the app, including APIs and integrations
+Deliverables:
+UI/UX design document
+Wireframes and prototypes of the app
+Technical design document
+Implementation
+Activities:
+Develop the app using the chosen technology stack (e.g. React Native, Node.js, MongoDB)
+Implement the features and functionality of the app, including:
+User registration and login
+Product listing and filtering
+Product details and advertisement
+Sorting products by name and brand
+Adding products to cart
+Checkout process with cash on delivery
+Conduct unit testing and integration testing
+Deliverables:
+Functional app with implemented features and functionality
+Unit test and integration test reports
+Unit Testing
+Activities:
+Conduct unit testing of individual components and modules
+Identify and fix defects and bugs
+Deliverables:
+Unit test report with test cases and results
+Integration Testing
+Activities:
+Conduct integration testing of the app
+Identify and fix defects and bugs
+Deliverables:
+Integration test report with test cases and results
+System Testing
+Activities:
+Conduct system testing of the app
+Identify and fix defects and bugs
+Deliverables:
+System test report with test cases and results
+Deployment
+Activities:
+Deploy the app to the production environment
+Configure the app for production
+Conduct smoke testing and sanity testing
+Deliverables:
+Deployed app in production environment
+Deployment report
+Maintenance
+Activities:
+Monitor the app for issues and defects
+Fix defects and bugs
+Implement new features and functionality
+Conduct regular security audits and penetration testing
+Deliverables:
+Regular maintenance reports
+Updated app with new features and functionality
+Here is a rough estimate of the timeline for each phase:
+
+
