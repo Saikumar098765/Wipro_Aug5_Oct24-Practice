@@ -1,0 +1,47 @@
+>> Levels of Software Testing
+
+Unit Testing:
+Purpose: To validate that individual units or components of the software function as intended.
+Performed by: Developers
+Focus: Isolated code components or functions.
+
+Integration Testing:
+Purpose: To ensure that different units or modules work together as expected.
+Performed by: Developers or Testers
+Focus: Interactions between integrated units or modules.
+
+System Testing:
+Purpose: To validate the complete and integrated software product to ensure it meets the specified requirements.
+Performed by: Testers
+Focus: The entire system's functionality, performance, security, and overall behavior.
+
+Acceptance Testing:
+Purpose: To determine whether the software is ready for release and meets the end-users' requirements.
+Performed by: End-users, clients, or stakeholders
+Focus: User needs, business processes, and compliance with requirements.
+Types: User Acceptance Testing (UAT), Alpha Testing, Beta Testing.
+
+Regression Testing:
+Purpose: To ensure that new code changes have not adversely affected existing functionalities.
+Performed by: Testers
+Focus: Previously tested functionalities after changes or enhancements.
+
+Performance Testing:
+Purpose: To assess the software's performance under various conditions, including load, stress, and scalability.
+Performed by: Performance Testers
+Focus: Response time, throughput, resource usage, and reliability under load.
+
+Security Testing:
+Purpose: To identify vulnerabilities and ensure that the software is protected against attacks.
+Performed by: Security Testers
+Focus: Data protection, authentication, authorization, and overall security measures.
+
+Usability Testing:
+Purpose: To evaluate the software's ease of use and user experience.
+Performed by: Usability Testers or end-users
+Focus: User interface, navigation, and overall user satisfaction.
+
+Compatibility Testing:
+Purpose: To ensure that the software works across different environments, such as browsers, devices, and operating systems.
+Performed by: Testers
+Focus: Software behavior across various configurations.

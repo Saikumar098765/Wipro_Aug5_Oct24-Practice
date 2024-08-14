@@ -1,0 +1,40 @@
+Sprint Planning Ceremony : 
+
+Purpose: The Sprint Planning ceremony is an essential part of the Scrum framework. It marks the beginning of a new sprint, where the team collaborates to define the work to be accomplished during the upcoming sprint. The primary goal is to set a realistic plan for delivering a potentially shippable product increment by the end of the sprint.
+
+Participants:
+Product Owner: Provides clarity on the product backlog items (PBIs) and their priorities.
+Scrum Master: Facilitates the meeting, ensuring it stays focused and productive.
+Development Team: Collaborates to estimate and commit to the work they can complete within the sprint.
+
+Agenda:
+Set the Sprint Goal:
+The Product Owner presents the objective for the sprint, known as the sprint goal, which provides a clear focus and direction for the team.
+
+Review the Product Backlog:
+The Product Owner presents the prioritized product backlog items (PBIs) and provides detailed explanations.
+The team discusses the PBIs, asking questions to clarify requirements and acceptance criteria.
+
+Select PBIs for the Sprint:
+The Development Team assesses the PBIs and determines which items they can realistically commit to completing within the sprint.
+The selection is based on the team's velocity (the amount of work they have historically been able to complete in a sprint) and the complexity of the tasks.
+Define the Sprint Backlog:
+The Development Team breaks down the selected PBIs into smaller, manageable tasks.
+Each task is estimated, usually in hours or story points, to ensure they fit within the sprint timeframe.
+
+Task Assignment and Ownership:
+Team members may voluntarily choose tasks based on their skills and interests.
+The Scrum Master ensures that the workload is evenly distributed and that no team member is overburdened.
+Plan for Potential Risks and Dependencies:
+The team identifies any potential risks, dependencies, or obstacles that might impact the sprint.
+Strategies for mitigating these risks are discussed and documented.
+Finalize the Sprint Plan:
+The Sprint Backlog, which includes the selected PBIs and their associated tasks, is finalized.
+The team commits to the sprint goal and the work to be completed.
+
+Duration:
+Typically, the Sprint Planning meeting lasts around 2 hours for a 2-week sprint. For longer sprints, the meeting might take more time but should not exceed 8 hours.
+
+Output:
+Sprint Goal: A clear and concise objective for the sprint.
+Sprint Backlog: A list of PBIs and their corresponding tasks that the team has committed to completing.

@@ -1,0 +1,35 @@
+Difference Between Software Test Planning and Software Test Strategy
+
+>>> Software Test Planning:
+
+Definition: A detailed document that outlines the scope, approach, resources, and schedule of testing activities. It identifies the test items, features to be tested, testing tasks, who will do each task, and any risks requiring contingency planning.
+Purpose: To provide a roadmap for testing activities to ensure that the product meets quality standards.
+Contents:
+Scope of testing
+Objectives
+Test criteria (entry and exit)
+Resource allocation (human, hardware, and software)
+Schedule and timelines
+Risk management
+Deliverables
+Environment setup
+Tools required
+
+>>> Software Test Strategy:
+
+Definition: A high-level document that describes the general approach and methodologies used in testing. It focuses on the overall approach to testing and ensures that all aspects of testing are covered.
+Purpose: To provide a clear, long-term vision of the testing process and how testing will be conducted across different projects.
+Contents:
+Testing objectives and goals
+Testing methods (manual, automated, exploratory, etc.)
+Levels and types of testing
+Test environments and configurations
+Test tools and frameworks
+Defect management process
+Metrics and measurements for testing
+Key Differences:
+Level of Detail: Test planning is more detailed and project-specific, whereas test strategy is high-level and often applies across multiple projects.
+Time Frame: Test strategy is developed early in the project lifecycle and remains relatively static, while test planning is developed closer to the start of testing and can be updated as needed.
+Scope: Test strategy covers the overall approach and methodologies, while test planning details specific activities, timelines, and resources
+
+
