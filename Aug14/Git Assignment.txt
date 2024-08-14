@@ -1,0 +1,70 @@
+Question :
+
+Create conflict in Git
+
+Identify a file which is there in remote and in your local
+
+take a pull to comfirm that both are same
+
+edit that file in local
+
+edit that same file in the remote repo
+
+try take a pull in your local observe error due to conflict and abort pull
+
+git stash your change
+
+take a pull and it will succeed
+
+apply you changes by git stash apply
+
+move your changes to stage area git add .
+
+commit and push the change to remote
+
+
+
+Steps to Follow :
+
+#!/bin/bash
+
+# Step 1: Identify a file in remote and local
+echo "Identifying file in remote and local..."
+file="example.txt"
+
+# Step 2: Take a pull to confirm both are the same
+echo "Taking a pull to confirm both are the same..."
+git pull origin master
+
+# Step 3: Edit the file in local
+echo "Editing file in local..."
+echo "Local change" >> $file
+
+# Step 4: Edit the same file in the remote repo
+echo "Editing file in remote repo..."
+echo "Remote change" >> $file
+
+# Step 5: Try to take a pull in local and observe error due to conflict
+echo "Trying to take a pull in local and observe error due to conflict..."
+git pull origin master
+
+# Step 6: Git stash your change
+echo "Git stashing local changes..."
+git stash
+
+# Step 7: Take a pull and it will succeed
+echo "Taking a pull and it will succeed..."
+git pull origin master
+
+# Step 8: Apply your changes by git stash apply
+echo "Applying stashed changes..."
+git stash apply
+
+# Step 9: Move your changes to stage area
+echo "Moving changes to stage area..."
+git add .
+
+# Step 10: Commit and push the change to remote
+echo "Committing and pushing changes to remote..."
+git commit -m "Resolved conflict"
+git push origin master
