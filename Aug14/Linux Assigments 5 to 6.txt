@@ -1,0 +1,48 @@
+Assignment 5: Modify the script to handle errors, such as the directory already existing or lacking permissions to create files. 
+	      Add a debugging mode that prints additional information when enabled.
+Solution:
+
+dir="TestDir"
+debug=false
+
+if [ "$1" = "-d" ]; then
+  debug=true
+  shift
+fi
+
+if [ -d "$dir" ]; then
+  if $debug; then
+    echo "Debug: Directory $dir already exists"
+  fi
+  echo "Directory $dir already exists"
+else
+  if $debug; then
+    echo "Debug: Creating directory $dir"
+  fi
+  mkdir "$dir" || {
+    echo "Error: Unable to create directory $dir"
+    exit 1
+  }
+  for i in {1..10}; do
+    file="File$i.txt"
+    if $debug; then
+      echo "Debug: Creating file $file"
+    fi
+    echo "$file" > "$dir/$file" || {
+      echo "Error: Unable to create file $file"
+      exit 1
+    }
+  done
+  echo "Directory $dir created with 10 files"
+fi
+
+Assignment 6: Create a script that takes a text file and replaces all occurrences of "old_text" with "new_text". 
+	      Use sed to perform this operation and output the result to a new file.
+Solution :
+
+old_text="old_text"
+new_text="new_text"
+input_file="input.txt"
+output_file="output.txt"
+
+sed "s/$old_text/$new_text/g" "$input_file" > "$output_file"
