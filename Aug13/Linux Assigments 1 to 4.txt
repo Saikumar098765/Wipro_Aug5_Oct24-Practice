@@ -1,0 +1,67 @@
+Assignment 1: Ensure the script checks if a specific file (e.g., myfile.txt) exists in the current directory. 
+              If it exists, print "File exists", otherwise print "File not found".
+
+Solution : 
+
+file="myfile.txt"
+
+if [ -f "$file" ]; then
+  echo "File exists"
+else
+  echo "File not found"
+fi
+
+
+Assignment 2: Write a script that reads numbers from the user until they enter '0'. 
+              The script should also print whether each number is odd or even.
+Solution :
+
+while true; do
+  read -p "Enter a number (or 0 to quit): " num
+  if [ "$num" -eq 0 ]; then
+    break
+  fi
+  if [ $((num % 2)) -eq 0 ]; then
+    echo "$num is even"
+  else
+    echo "$num is odd"
+  fi
+done
+
+Assignment 3: Create a function that takes a filename as an argument and prints the number of lines in the file. 
+              Call this function from your script with different filenames.
+
+Solution :
+
+#!/bin/bash
+
+count_lines() {
+  local file="$1"
+  if [ -f "$file" ]; then
+    echo "Number of lines in $file: $(wc -l < "$file")"
+  else
+    echo "File not found: $file"
+  fi
+}
+
+count_lines "file1.txt"
+count_lines "file2.txt"
+count_lines "nonexistent_file.txt"
+
+Assignment 4: Write a script that creates a directory named TestDir and inside it, creates ten files named File1.txt, File2.txt, ... File10.txt. 
+	      Each file should contain its filename as its content (e.g., File1.txt contains "File1.txt").
+
+Solution :
+
+dir="TestDir"
+
+if [ -d "$dir" ]; then
+  echo "Directory $dir already exists"
+else
+  mkdir "$dir"
+  for i in {1..10}; do
+    file="File$i.txt"
+    echo "$file" > "$dir/$file"
+  done
+  echo "Directory $dir created with 10 files"
+fi
