@@ -1,0 +1,32 @@
+[3:02 PM] Narasimha (Unverified)
+
+
+Pascal Casing:
+
+	MyFirstConsoleApp
+
+	System
+
+	Console
+
+	WriteLine
+
+
+Camel Casing:
+
+		userName
+
+		userAge
+
+		studentId
+
+		customerCityName
+
+		age
+
+		studentName
+ 
+[3:03 PM] Narasimha (Unverified)
+1.Namespace, Class, Method, Property names should be in Pascal Case.
+2.Method Arguments and Local Variables should be in Camel Case.
+ 
