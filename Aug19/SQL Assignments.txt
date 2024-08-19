@@ -1,0 +1,100 @@
+
+Assignment 1: Design a database schema for a library system, including tables, fields, and constraints like NOT NULL, UNIQUE, and CHECK. 
+	      Include primary and foreign keys to establish relationships between tables.
+
+Assignment 2: Explain the ACID properties of a transaction in your own words. Write SQL statements to simulate a transaction that includes locking and 
+	      demonstrate different isolation levels to show concurrency control.
+
+Assignment 3: Write SQL statements to CREATE a new database and tables that reflect the library schema you designed earlier. Use ALTER statements to modify the 
+	      table structures and DROP statements to remove a redundant table.
+
+Ass Solution 1:
+
+CREATE TABLE Authors (
+  AuthorID INT PRIMARY KEY,
+  Name VARCHAR(50) NOT NULL,
+  BirthDate DATE
+);
+
+CREATE TABLE Books (
+  BookID INT PRIMARY KEY,
+  Title VARCHAR(100) NOT NULL,
+  ISBN VARCHAR(20) UNIQUE,
+  Publisher VARCHAR(50),
+  PublicationDate DATE
+);
+
+CREATE TABLE BookAuthors (
+  BookID INT,
+  AuthorID INT,
+  PRIMARY KEY (BookID, AuthorID),
+  FOREIGN KEY (BookID) REFERENCES Books(BookID),
+  FOREIGN KEY (AuthorID) REFERENCES Authors(AuthorID)
+);
+
+CREATE TABLE Borrowers (
+  BorrowerID INT PRIMARY KEY,
+  Name VARCHAR(50) NOT NULL,
+  Email VARCHAR(50) UNIQUE,
+  Phone VARCHAR(20)
+);
+
+CREATE TABLE Loans (
+  LoanID INT PRIMARY KEY,
+  BookID INT,
+  BorrowerID INT,
+  LoanDate DATE NOT NULL,
+  DueDate DATE NOT NULL,
+  ReturnDate DATE,
+  FOREIGN KEY (BookID) REFERENCES Books(BookID),
+  FOREIGN KEY (BorrowerID) REFERENCES Borrowers(BorrowerID)
+); 
+	
+Ass Solution 2:
+
+	-- Start transaction
+BEGIN TRANSACTION;
+
+-- Lock the Books table for exclusive access
+LOCK TABLE Books IN EXCLUSIVE MODE;
+
+-- Update the book title
+UPDATE Books SET Title = 'New Title' WHERE BookID = 1;
+
+-- Commit the transaction
+COMMIT;
+
+-- Demonstrate different isolation levels
+-- Isolation Level: READ UNCOMMITTED
+SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+SELECT * FROM Books WHERE BookID = 1;
+
+-- Isolation Level: READ COMMITTED
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED;
+SELECT * FROM Books WHERE BookID = 1;
+
+-- Isolation Level: REPEATABLE READ
+SET TRANSACTION ISOLATION LEVEL REPEATABLE READ;
+SELECT * FROM Books WHERE BookID = 1;
+
+-- Isolation Level: SERIALIZABLE
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
+SELECT * FROM Books WHERE BookID = 1;
+
+
+Ass Solution 3: 
+
+CREATE DATABASE LibraryDB;
+
+USE LibraryDB;
+
+CREATE TABLE Authors (
+  AuthorID INT PRIMARY KEY,
+  Name VARCHAR(50) NOT NULL,
+  BirthDate DATE
+);
+
+CREATE TABLE Books (
+  BookID INT PRIMARY KEY,
+  Title VARCHAR(100
+	
