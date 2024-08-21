@@ -1,0 +1,47 @@
+1) Create a CustomStack class in C# with operations Push, Pop, Peek, and IsEmpty. Demonstrate its LIFO behavior by pushing integers onto the stack,
+   then popping and displaying them until the stack is empty.
+
+2) Develop a CustomQueue class with methods for Enqueue, Dequeue, Peek, and IsEmpty. Show how your queue can handle different data types by enqueuing 
+   strings and integers, then dequeuing and displaying them to confirm FIFO order."
+
+Sol 1)
+	
+CustomStack<int> stack = new CustomStack<int>();
+
+stack.Push(1);
+stack.Push(2);
+stack.Push(3);
+stack.Push(4);
+stack.Push(5);
+
+while (!stack.IsEmpty())
+{
+    Console.WriteLine(stack.Pop());
+}
+
+// Output:
+// 5
+// 4
+// 3
+// 2
+// 1
+
+Sol 2)
+
+CustomQueue<object> queue = new CustomQueue<object>();
+
+queue.Enqueue("Hello");
+queue.Enqueue(1);
+queue.Enqueue("World");
+queue.Enqueue(2);
+
+while (!queue.IsEmpty())
+{
+    Console.WriteLine(queue.Dequeue());
+}
+
+// Output:
+// Hello
+// 1
+// World
+// 2
