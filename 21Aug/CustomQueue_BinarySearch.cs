@@ -1,0 +1,73 @@
+﻿using System;
+using System.Collections.Generic;
+
+public class CustomQueue<T>
+{
+    private List<T> elements = new List<T>();
+
+    // Enqueue: Add an element to the end of the queue
+    public void Enqueue(T item)
+    {
+        elements.Add(item);
+    }
+
+    // Dequeue: Remove and return the front element of the queue
+    public T Dequeue()
+    {
+        if (IsEmpty())
+        {
+            throw new InvalidOperationException("Queue is empty");
+        }
+        T value = elements[0];
+        elements.RemoveAt(0);
+        return value;
+    }
+
+    // Peek: Return the front element without removing it
+    public T Peek()
+    {
+        if (IsEmpty())
+        {
+            throw new InvalidOperationException("Queue is empty");
+        }
+        return elements[0];
+    }
+
+    // IsEmpty: Check if the queue is empty
+    public bool IsEmpty()
+    {
+        return elements.Count == 0;
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        CustomQueue<int> intQueue = new CustomQueue<int>();
+        CustomQueue<string> stringQueue = new CustomQueue<string>();
+
+        // Enqueue integers
+        intQueue.Enqueue(1);
+        intQueue.Enqueue(2);
+        intQueue.Enqueue(3);
+
+        // Enqueue strings
+        stringQueue.Enqueue("Hello");
+        stringQueue.Enqueue("World");
+
+        // Dequeue and print integers
+        Console.WriteLine("Integer Queue:");
+        while (!intQueue.IsEmpty())
+        {
+            Console.WriteLine(intQueue.Dequeue()); // Output: 1, 2, 3
+        }
+
+        // Dequeue and print strings
+        Console.WriteLine("String Queue:");
+        while (!stringQueue.IsEmpty())
+        {
+            Console.WriteLine(stringQueue.Dequeue()); // Output: Hello, World
+        }
+    }
+}
