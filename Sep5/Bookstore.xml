@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Bookstore>
+	<Book>
+		<Title>The Adventures of Sherlock Holmes</Title>
+		<Author>Arthur Conan Doyle</Author>
+		<Price>29.99</Price>
+	</Book>
+	<Book>
+		<Title>Advanced Programming in C#</Title>
+		<Author>John Doe</Author>
+		<Price>45.50</Price>
+	</Book>
+	<Book>
+		<Title>Data Structures and Algorithms</Title>
+		<Author>Jane Smith</Author>
+		<Price>39.75</Price>
+	</Book>
+	<Book>
+		<Title>Learning LINQ</Title>
+		<Author>John Doe</Author>
+		<Price>25.00</Price>
+	</Book>
+	<Book>
+		<Title>Design Patterns</Title>
+		<Author>Gamma, Helm, Johnson, and Vlissides</Author>
+		<Price>49.99</Price>
+	</Book>
+</Bookstore>
