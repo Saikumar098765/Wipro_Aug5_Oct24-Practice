@@ -1,0 +1,40 @@
+﻿<Window x:Class="Employee_Dashboard.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Employee_Dashboard"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid>
+            <StackPanel Orientation="Vertical" Margin="10">
+                <!-- Employee ID, Name, Gender in a row -->
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Employee Id:" Width="100" VerticalAlignment="Center" RenderTransformOrigin="0.881,0.463"/>
+                    <TextBox Name="EmployeeIdTextBox" Width="150"/>
+                    <Button Content="Get" Width="50" Click="GetEmployee" RenderTransformOrigin="2.107,0.781"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                    <TextBlock Text="Employee Name:" Width="100" VerticalAlignment="Center"/>
+                    <TextBox Name="EmployeeNameTextBox" Width="150"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                    <TextBlock Text="Gender:" Width="100" VerticalAlignment="Center"/>
+                    <TextBox Name="GenderTextBox" Width="150"/>
+                </StackPanel>
+
+                <!-- Buttons for Create, Edit, View -->
+                <StackPanel Orientation="Horizontal" Margin="10,20,0,0">
+                    <Button Content="Create" Width="100" Click="CreateEmployee"/>
+                    <Button Content="Edit" Width="100" Margin="10,0,0,0" Click="EditEmployee"/>
+                    <Button Content="View" Width="100" Margin="10,0,0,0" Click="ViewEmployee"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+
+
+    </Grid>
+</Window>
