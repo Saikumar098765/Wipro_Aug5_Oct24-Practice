@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<style>
+
+/* Increase the height and width of the page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; /* Increased height */
+    width: 90vw; /* Increased width */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  /* Positioning the photo container in the bottom-right corner */
+  #photo-container {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: relative;
+}
+
+form > div {
+  flex: 1 1 45%;
+}
+
+input[type="text"], input[type="email"], input[type="date"], input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#photo-container {
+  flex: 1 1 100%;
+  margin-top: 20px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+  max-width: 400px;
+  width: 100%;
+}
+
+.popup button {
+  margin-top: 10px;
+}
+</style>
+<script>
+function validations() {
+  let fname = document.forms["myForm"]["fname"].value;
+  let lname = document.forms["myForm"]["lname"].value;
+  let dob = document.forms["myForm"]["dob"].value;
+  let salary = document.forms["myForm"]["salary"].value;
+  let email = document.forms["myForm"]["email"].value;
+  let gender = document.forms["myForm"]["gender"].value;
+  let photo = document.forms["myForm"]["photo"].value;
+
+  let message = "";
+
+  if (fname === "") message += "First Name must be filled out\n";
+  if (lname === "") message += "Last Name must be filled out\n";
+  if (dob === "") message += "Date of Birth must be selected\n";
+  if (salary === "" || isNaN(salary) || salary <= 0) message += "Salary must be a positive number\n";
+  if (email === "") message += "Email must be filled out\n";
+  if (gender === "") message += "Gender must be selected\n";
+  if (photo === "") message += "Photo must be chosen\n";
+
+  if (message) {
+    showPopup(message);
+    return false;
+  }
+  return true;
+}
+
+function showPopup(message) {
+  let popup = document.getElementById("popup");
+  document.getElementById("popup-message").innerText = message;
+  popup.style.display = "block";
+}
+
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+</script>
+</head>
+<body>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post" enctype="multipart/form-data">
+  <div>First Name: <input type="text" name="fname"></div>
+  <div>Last Name: <input type="text" name="lname"></div>
+  <div>Date of Birth: <input type="date" name="dob"></div>
+  <div>Gender:
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+  </div>
+  <div>Salary: <input type="text" name="salary"></div>
+  <div>Email: <input type="email" name="email"></div>
+  
+  <!-- Choose Photo Container -->
+  <div id="photo-container">
+    Choose Photo: <input type="file" name="photo">
+  </div>
+
+  <input type="submit" value="Submit">
+</form>
+
+<!-- Popup message -->
+<div id="popup" class="popup">
+  <div id="popup-message"></div>
+  <button onclick="closePopup()">Ok</button>
+</div>
+
+</body>
+</html>
