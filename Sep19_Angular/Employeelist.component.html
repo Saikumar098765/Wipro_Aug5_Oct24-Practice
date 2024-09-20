@@ -1,0 +1,29 @@
+<div class="container mt-5">
+    <div class="text-center mb-4">
+      <h1>Employee Management App</h1>
+      <h3>Employee List</h3>
+    </div>
+  
+    <table class="table table-bordered">
+      <thead class="thead-light">
+        <tr>
+          <th>Name</th>
+          <th>Position</th>
+          <th>Department</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employees">
+          <!-- Move the contents into individual <td> elements -->
+          <td>{{ employee.name }}</td>
+          <td>{{ employee.position }}</td>
+          <td>{{ employee.department }}</td>
+          <td>
+            <app-employee [employee]="employee"></app-employee>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
