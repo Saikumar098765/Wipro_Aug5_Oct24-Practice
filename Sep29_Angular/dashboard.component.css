@@ -1,0 +1,50 @@
+/* employee-list.component.css */
+.employee-list-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #4A4A4A;
+    margin-bottom: 20px;
+  }
+  
+  .employee-table {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  thead {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 12px;
+  }
+  
+  td {
+    vertical-align: middle;
+  }
+  
+  .edit-btn {
+    background-color: #28a745;
+    border-color: #28a745;
+  }
+  
+  .edit-btn:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+  }
+  
+  @media (max-width: 768px) {
+    .employee-table {
+      font-size: 14px;
+    }
+  }
+  
