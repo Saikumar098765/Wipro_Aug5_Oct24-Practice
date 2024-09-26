@@ -1,0 +1,41 @@
+﻿@model IEnumerable<EmployeeManagement.Models.Employee>
+
+@{
+    ViewData["Title"] = "Employee List";
+}
+
+<h2>Employee List</h2>
+
+<table class="table" style="border: 2px solid black; width: 100%;">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Salary</th>
+            <th>Address</th>
+            <th>Country</th>
+            <th>Age</th>
+            <th>Date of Birth</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var employee in Model)
+        {
+            <tr>
+                <td>@employee.GetFullName()</td>
+                <td>@employee.Email</td>
+                <td>@employee.PhoneNumber</td>
+                <td>@employee.Salary</td>
+                <td>@employee.Address</td>
+                <td>@employee.Country</td>
+                <td>@employee.Age</td>
+                <td>@employee.DateOfBirth.ToShortDateString()</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+    <a asp-controller="Employee" asp-action="Create">Add New Employee</a>
+</div>
