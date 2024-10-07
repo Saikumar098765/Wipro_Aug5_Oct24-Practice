@@ -1,0 +1,83 @@
+﻿<!-- wwwroot/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .employee-list {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Management</h1>
+        <form id="employeeForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br><br>
+
+            <label for="employeeType">Employee Type:</label>
+            <select id="employeeType" required>
+                <option value="Permanent">Permanent</option>
+                <option value="Contractual">Contractual</option>
+            </select><br><br>
+
+            <button type="submit">Add Employee</button>
+        </form>
+
+        <div class="employee-list">
+            <h2>Employee List</h2>
+            <ul id="employeeList"></ul>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('employeeForm');
+        const employeeList = document.getElementById('employeeList');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const employeeType = document.getElementById('employeeType').value;
+
+            const response = await fetch('/api/Employee', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ name, employeeType })
+            });
+
+            if (response.ok) {
+                loadEmployees();
+                form.reset();
+            }
+        });
+
+        async function loadEmployees() {
+            const response = await fetch('/api/Employee');
+            const employees = await response.json();
+            employeeList.innerHTML = '';
+            employees.forEach(employee => {
+                const li = document.createElement('li');
+                li.textContent = `${employee.name} (${employee.employeeType})`;
+                employeeList.appendChild(li);
+            });
+        }
+
+        loadEmployees();
+    </script>
+</body>
+</html>
