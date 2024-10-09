@@ -1,0 +1,35 @@
+Service and Deployment Models: IaaS, PaaS, SaaS, Public, Private, Hybrid prepare a small notes
+
+
+Here are Service and Deployment Models:
+
+Service Models:
+
+IaaS (Infrastructure as a Service):
+	Provides virtualized computing resources over the internet
+	Users have full control over infrastructure
+	Examples: Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform (GCP)
+
+PaaS (Platform as a Service):
+	Provides a complete platform for developing, running, and managing applications
+	Users have control over application and data, but not infrastructure
+	Examples: Heroku, Google App Engine, Microsoft Azure App Service
+
+SaaS (Software as a Service):
+	Provides software applications over the internet
+	Users have no control over infrastructure or application
+	Examples: Microsoft Office 365, Salesforce, Dropbox
+
+Deployment Models:
+
+Public Cloud
+Resources are provided over the internet and are open to the general public
+Examples: Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform (GCP)
+
+Private Cloud
+Resources are provided over the internet or a private network and are restricted to a single organization
+Examples: VMware, OpenStack, Microsoft System Center
+
+Hybrid Cloud
+Combines public and private cloud resources to provide a flexible and scalable infrastructure
+Examples: Microsoft Azure Stack, AWS Outposts, Google Cloud Anthos
