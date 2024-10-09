@@ -1,0 +1,34 @@
+Azure App Service, Azure Functions notes:
+
+
+>>>Azure App Service:
+
+A fully managed platform for building, deploying, and scaling web applications
+Supports multiple programming languages, including .NET, Node.js, Python, and Java
+
+Features:
+Auto-scaling and load balancing
+Continuous integration and deployment (CI/CD)
+Security and compliance features, such as authentication and authorization
+Support for containers and serverless computing
+Examples of use cases:
+Building web applications with .NET, Node.js, or Python
+Hosting web APIs and microservices
+Deploying containerized applications
+
+
+>>>Azure Functions:
+
+A serverless compute service for running event-driven code
+Allows developers to write and deploy small code snippets, known as "functions"
+
+Features:
+Event-driven architecture, with support for triggers and bindings
+Automatic scaling and load balancing
+Support for multiple programming languages, including C#, F#, Node.js, Python, and Go
+Integration with other Azure services, such as Azure Storage and Azure Cosmos DB
+Examples of use cases:
+Real-time data processing and analytics
+IoT device processing and automation
+Image and video processing
+API gateways and backend services
