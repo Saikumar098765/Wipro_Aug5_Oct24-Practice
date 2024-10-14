@@ -1,0 +1,38 @@
+Project Workflow and Schedule:
+
+Team Size: 10 members
+
+Meeting Schedule:
+
+Regular meetings to ensure smooth collaboration and communication.
+
+Weekly Development Cycle:
+
+Tech Lead: Review and merge code changes every Friday.
+
+Build and Deploy: 
+
+Deploy to the server.
+
+Testing: Conduct testing on Monday to ensure stability and functionality.
+
+Continuous Integration and Deployment:
+
+Continuous Integration (CI):
+
+Triggered whenever code is checked in.
+
+Build and test the code automatically.
+
+Continuous Deployment (CD):
+
+Deploy the package from CI to the server seamlessly.
+
+Tools and Technologies:
+Azure DevOps: Manage the full development lifecycle.
+
+Jenkins: Automate the CI/CD processes.
+
+AWS DevOps: Leverage cloud infrastructure for scalable deployments.
+
+By following this workflow, the team ensures timely and efficient delivery of features, while maintaining high standards of quality and collaboration. Let me know if you need anything else!
