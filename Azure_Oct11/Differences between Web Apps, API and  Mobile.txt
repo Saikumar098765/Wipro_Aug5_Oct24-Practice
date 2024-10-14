@@ -1,0 +1,30 @@
+Differences between Web Apps, API Apps, and Mobile Apps lie in their functionality, accessibility, and Purpose: 
+
+Web Apps : 
+
+They are applications that run on a web browser, requiring an active internet connection to function. 
+They can be accessed from any device with a web browser, making them cross-platform compatible. Web Apps are ideal
+for providing a seamless user experience, with features like:
+Accessibility: Can be accessed from any device with a web browser
+Cross-platform compatibility: Can run on multiple operating systems
+Easy updates: Updates are automatically applied to the web app, without requiring user intervention
+Cost-effective: Development and maintenance costs are relatively lower compared to mobile apps
+
+API Apps:
+
+They are applications that provide a set of protocols and routines for building software applications. They act as an 
+intermediary between different systems, enabling communication and data exchange. API Apps are ideal for:
+Data integration: Enable data exchange between different systems and applications
+Microservices architecture: Allow for the creation of microservices-based systems
+Scalability: Can handle a large number of requests and can be load-balanced
+Security: Can include built-in security features like authentication and authorization
+
+Mobile Apps :
+
+They are applications designed to run on mobile devices, such as smartphones and tablets. 
+They can be downloaded from app stores and installed on the device, providing a native user experience. 
+Mobile Apps are ideal for:
+Native experience: Provide a native user experience, with access to device hardware and features
+Offline access: Can function offline, without requiring an active internet connection
+Push notifications: Can send push notifications to users, even when the app is not in use
+Personalization: Can provide personalized experiences, using device-specific features and data
